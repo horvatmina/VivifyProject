@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FindMyGallery extends BaseTest {
+	
 	@Test
 	public void findMyGallery () {
 		logInValidCredentials ();
@@ -12,5 +13,4 @@ public class FindMyGallery extends BaseTest {
 		String actualText = homePage.getFirstGallery().getText();
 		Assert.assertEquals(actualText, "Psi");
 	}
-
 }

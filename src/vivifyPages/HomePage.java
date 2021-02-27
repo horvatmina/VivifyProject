@@ -56,5 +56,9 @@ public class HomePage {
 		this.getSearchField().sendKeys(name);
 		this.getFilterButton().click();
 	}
+	
+	public void clickLogoutButton () {
+		this.getLogoutButton().click();
+	}
 
 }

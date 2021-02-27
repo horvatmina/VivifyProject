@@ -3,7 +3,7 @@ package vivifyTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LogIn extends BaseTest {
+public class Login extends BaseTest {
 	
 	@Test 
 	public void logInValidCredentials () {

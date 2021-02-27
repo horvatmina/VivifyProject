@@ -9,6 +9,7 @@ public class LoginPage {
 	WebElement emailField;
 	WebElement passwordField;
 	WebElement submitButton;
+	WebElement pleaseLogin;
 	
     //constructor
 	public LoginPage(WebDriver driver) {
@@ -28,6 +29,10 @@ public class LoginPage {
 		return driver.findElement(By.xpath("//button[@type='submit']"));
 	}
 	
+	public WebElement getPleaseLogin() {
+		return driver.findElement(By.tagName("h1"));
+	}
+
 	//methods
 	public void logIn (String email, String password) {
 		this.getEmailField().clear();

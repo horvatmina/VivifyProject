@@ -45,15 +45,15 @@ public class BaseTest {
 	
 	@AfterMethod
 	public void afterMethod() {
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.navigate().refresh();
 
 	}
 	
 	@AfterClass
 	public void tearDown() throws IOException {
-		//driver.close();
-		//driver.quit();
+		driver.close();
+		driver.quit();
 	}
 	
 	public void logInValidCredentials () {
