@@ -46,7 +46,7 @@ public class BaseTest {
 	@AfterMethod
 	public void afterMethod() {
 		//driver.manage().deleteAllCookies();
-		//driver.navigate().refresh();
+		driver.navigate().refresh();
 
 	}
 	
@@ -55,5 +55,9 @@ public class BaseTest {
 		//driver.close();
 		//driver.quit();
 	}
-
+	
+	public void logInValidCredentials () {
+		homePage.clickLoginButton();
+		loginPage.logIn("pera@fakemail.com", "pera1234");
+	}
 }

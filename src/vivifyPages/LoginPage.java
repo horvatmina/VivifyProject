@@ -36,10 +36,4 @@ public class LoginPage {
 		this.getPasswordField().sendKeys(password);
 		this.getSubmitButton().click();
 	}
-	
-	
-	
-	
-	
-	
 }
