@@ -45,8 +45,8 @@ public class BaseTest {
 	
 	@AfterMethod
 	public void afterMethod() {
-		driver.manage().deleteAllCookies();
-		driver.navigate().refresh();
+		//driver.manage().deleteAllCookies();
+		//driver.navigate().refresh();
 
 	}
 	
