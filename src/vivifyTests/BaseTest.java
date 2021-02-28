@@ -41,13 +41,11 @@ public class BaseTest {
 	public void setup() {
 		driver.navigate().to("https://gallery-app.vivifyideas.com/");
 	}
-	
-	
+		
 	@AfterMethod
 	public void afterMethod() {
 		driver.manage().deleteAllCookies();
 		driver.navigate().refresh();
-
 	}
 	
 	@AfterClass
@@ -58,6 +56,6 @@ public class BaseTest {
 	
 	public void logInValidCredentials () {
 		homePage.clickLoginButton();
-		loginPage.logIn("pera@fakemail.com", "pera1234");
+		loginPage.logIn("peraaa@fakemail.com", "pera1234");
 	}
 }

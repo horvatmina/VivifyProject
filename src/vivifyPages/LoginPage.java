@@ -30,7 +30,7 @@ public class LoginPage {
 	}
 	
 	public WebElement getPleaseLogin() {
-		return driver.findElement(By.tagName("h1"));
+		return driver.findElement(By.className("title-style"));
 	}
 
 	//methods

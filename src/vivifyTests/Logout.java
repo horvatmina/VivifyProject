@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Logout extends BaseTest{
+	
 	@Test 
 	public void logout () {
 		logInValidCredentials ();
